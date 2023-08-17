@@ -124,22 +124,18 @@ body {
     color: hsl(0, 1%, 71%);
     font-weight: 400;
 }
-.app .right-side .marks .mark .title i {
+.app .right-side .marks .mark .title img {
     margin-right: 20px;
 }
-.app .right-side .marks .mark.red .title i,
 .app .right-side .marks .mark.red .title h4 {
     color: hsl(0, 100%, 67%);
-}
-.app .right-side .marks .mark.orange .title i, 
+} 
 .app .right-side .marks .mark.orange .title h4 {
     color: hsl(39, 100%, 56%);
 }
-.app .right-side .marks .mark.green .title i,
 .app .right-side .marks .mark.green .title h4 {
     color: hsl(166, 100%, 37%);
 }
-.app .right-side .marks .mark.blue .title i,
 .app .right-side .marks .mark.blue .title h4 {
     color: hsl(234, 85%, 45%);
 }
