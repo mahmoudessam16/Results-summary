@@ -1,0 +1,181 @@
+body {
+    font-family: 'Hanken Grotesk', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: hsl(0, 0%, 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+.app {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    box-shadow: 0px 0px 50px 0 hsl(241, 100%, 89%);
+    margin: 50px;
+    border-radius: 30px;
+}
+.app .left-side {
+    background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    flex: 1;
+    border-radius: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px 0;
+}
+.app .left-side .circle {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: linear-gradient(to bottom, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    margin: 25px 0;
+}
+.app .left-side h3 {
+    color: hsl(221, 100%, 96%);
+    font-weight: 500;
+}
+.app .left-side .circle .result {
+    font-size: 70px;
+    font-weight: 600;
+    color: white;
+}
+.app .left-side .circle .mark-100 {
+    color: hsl(0, 1%, 71%);
+}
+.app .left-side .left-side-info {
+    text-align: center;
+}
+.app .left-side .left-side-info h2 {
+    color: hsl(0, 0%, 100%);
+    font-size: 25px;
+    letter-spacing: 1.5px;
+    font-weight: 700;
+}
+.app .left-side .left-side-info p {
+    font-size: 17px;
+    padding: 0 30px;
+    color: rgb(221, 220, 220);
+    line-height: 1.4;
+}
+
+.app .right-side {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 40px 0;
+}
+.app .right-side h3, 
+.app .right-side .marks,
+.app .right-side button {
+    margin: 0 30px;
+}
+.app .right-side .marks .mark {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.app .right-side .marks .mark .title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.app .right-side h3 {
+    color: hsl(224.44,13.17%,40.2%);
+    font-weight: 800;
+    font-size: 23px;
+    letter-spacing: -1px;
+}
+.app .right-side .marks {
+    width: 100%;
+}
+.app .right-side .marks .mark {
+    width: 80%;
+    border-radius: 12px;
+    margin: 10px 0;
+    padding: 0 10px;
+}
+.app .right-side .marks .mark.red {
+    background-color: hsla(0, 100%, 67%, 0.1);
+}
+.app .right-side .marks .mark.orange {
+    background-color: hsla(39, 100%, 56%, 0.1);
+}
+.app .right-side .marks .mark.green {
+    background-color: hsla(166, 100%, 37%, 0.1);
+}
+.app .right-side .marks .mark.blue {
+    background-color: hsla(234, 85%, 45%, 0.1);
+}
+.app .right-side .marks .mark > span {
+    font-weight: 800;
+    color: hsl(224.44,13.17%,40.2%);
+    letter-spacing: 0.1px;
+}
+.app .right-side .marks .mark > span .mark-result {
+    color: hsl(0, 1%, 71%);
+    font-weight: 400;
+}
+.app .right-side .marks .mark .title i {
+    margin-right: 20px;
+}
+.app .right-side .marks .mark.red .title i,
+.app .right-side .marks .mark.red .title h4 {
+    color: hsl(0, 100%, 67%);
+}
+.app .right-side .marks .mark.orange .title i, 
+.app .right-side .marks .mark.orange .title h4 {
+    color: hsl(39, 100%, 56%);
+}
+.app .right-side .marks .mark.green .title i,
+.app .right-side .marks .mark.green .title h4 {
+    color: hsl(166, 100%, 37%);
+}
+.app .right-side .marks .mark.blue .title i,
+.app .right-side .marks .mark.blue .title h4 {
+    color: hsl(234, 85%, 45%);
+}
+.app .right-side button {
+    width: 85%;
+    padding: 15px 30px;
+    border-radius: 30px;
+    margin-top: 20px;
+    border: none;
+    outline: none;
+    background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.app .right-side button:hover {
+    background-image: none;
+    background-color: hsl(224, 30%, 27%);
+}
+
+@media (max-width: 600px) {
+    .app {
+        flex-direction: column;
+        margin: 0;
+        box-shadow: none;
+    }
+    .app .left-side {
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+    }
+    .app .right-side .marks {
+        width: 90%;
+    }
+    .app .right-side button {
+        width: 78%;
+    }
+}
